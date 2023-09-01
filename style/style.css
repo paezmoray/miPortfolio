@@ -17,7 +17,7 @@ header {
     position: fixed;
     z-index: 100;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -45,6 +45,10 @@ nav a:hover {
     padding-top: 15vh;
 }
 
+section {
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Estilos específicos para cada sección */
 #fotoPerfil {
     width: 15vh;
@@ -62,17 +66,21 @@ h2 {
 #inicio {
     background-color: #f9f9f9;
     padding: 2rem;
+    margin-top: -10vh;
+    padding-top: 15vh;
     text-align: justify;
 }
 
 #proyectos {
     background-color: #f2f2f2;
-    padding: 1rem;
+    padding: 2rem;
+    padding-top: 15vh;
     text-align: justify;
 }
 
 .container-proyectos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
 }
@@ -81,15 +89,25 @@ h2 {
     margin: 10px;
 }
 
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
 #sobre-mi {
     background-color: #f9f9f9;
     padding: 2rem;
+    padding-top: 15vh;
     text-align: justify;
 }
 
 #contacto {
     background-color: #f2f2f2;
     padding: 2rem;
+    padding-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
